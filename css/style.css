@@ -57,10 +57,6 @@ a {
   outline-offset: 5px;
 }
 
-/* body {
-          background-color: rgba(12, 13, 13);
-        } */
-
 .site-header{
   position: fixed;
   background: rgba(9, 11, 12, 0.82);
@@ -97,7 +93,46 @@ a {
   font-size: clamp(1rem, 1vw, 3rem);
   margin-right: clamp(10px, 4.5vw, 100px);
 }
+.butstart1{
+  color: var(--accent);
+  display: inline-block;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(1rem, 1vw, 3rem);
+}
+.butstart2{
+  padding: 0.8rem;
+  padding-inline: 1.5rem;
+  border: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+  background-color: transparent;
 
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 100ms ease;
+}
+.butstart2:hover,
+.butstart2:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+  background-color: rgba(93, 225, 242, 0.06);
+
+  box-shadow:
+    0 0 0.5rem rgba(93, 225, 242, 0.25),
+    0 0 1.5rem rgba(93, 225, 242, 0.12);
+}
+.butstart2:active {
+  transform: scale(0.97);
+  background-color: rgba(93, 225, 242, 0.14);
+
+  box-shadow:
+    0 0 0.75rem rgba(93, 225, 242, 0.4),
+    0 0 2rem rgba(93, 225, 242, 0.2);
+}
 .description{
   color:rgb(147, 154, 154);
   font-family: 'Roboto Condensed', sans-serif;
@@ -105,16 +140,14 @@ a {
   margin: clamp(50px,7vw,100px);
   max-width: 25rem;
 }
-.nav{
+.nav2{
   display: flex;
   align-items: center;
   gap: 1.5rem;
   padding-bottom: 0.25rem;
+  margin-right: clamp(2rem, 6vw, 6rem);
 }
 .port{
-  /* color:rgb(92, 195, 199);
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: clamp(1rem, 1vw, 3rem); */
   margin: 0 0 1.25rem;
   margin-left: 2rem;
   color: var(--accent);
@@ -133,7 +166,15 @@ a {
     rgba(245, 157, 19, 0)
   );
 }
+.grid-class{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: clamp(2rem, 6vw, 6rem);
 
+  min-height: 100vh;
+  padding: clamp(8rem, 15vh, 11rem) 2rem 4rem;
+}
 .section-one{
   display: grid;
   min-height: 100vh;
