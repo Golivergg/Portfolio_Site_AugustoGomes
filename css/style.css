@@ -101,8 +101,13 @@ a {
   font-size: clamp(1rem, 1vw, 3rem);
 }
 .butstart2{
-  padding: 0.8rem;
-  padding-inline: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 2.4rem;
+  padding: 0 1.5rem;
+  min-height: 3rem;
   border: 1px solid var(--line);
   color: var(--text);
   text-decoration: none;
@@ -132,6 +137,10 @@ a {
   box-shadow:
     0 0 0.75rem rgba(93, 225, 242, 0.4),
     0 0 2rem rgba(93, 225, 242, 0.2);
+}
+.contact-email{
+  margin-top: 2rem;
+  align-self: flex-start;
 }
 .description{
   color:rgb(147, 154, 154);
@@ -190,9 +199,24 @@ a {
 }
   .white-title{
     font-size: clamp(4rem, 11vw, 10rem);
-    margin: 2rem;
+    margin: 0;
     font-family: "Arimo", sans-serif;
-    color: white
+    color: white;
+    line-height: 0.9;
+}
+.grey-title2{
+    margin: 0;
+    font-size: clamp(3rem, 8vw, 10rem);
+    font-family: "Arimo", sans-serif;
+    color:rgb(147, 154, 154);
+    line-height: 0.9;
+}
+  .white-title2{
+    font-size: clamp(3rem, 8vw, 10rem);
+    margin: 0;
+    font-family: "Arimo", sans-serif;
+    color: white;
+    line-height: 0.9;
 }
   .blue-title{
     font-size: clamp(4rem, 11vw, 10rem);
