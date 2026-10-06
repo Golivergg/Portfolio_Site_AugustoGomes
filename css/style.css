@@ -140,6 +140,8 @@ a {
 }
 .contact-email{
   margin-top: 2rem;
+  margin-left: clamp(1rem, 10rem, 12rem);
+  margin-right: 2rem;
   align-self: flex-start;
 }
 .description{
@@ -147,6 +149,16 @@ a {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: clamp(1rem, 1.5vw, 2rem);
   margin: clamp(50px,7vw,100px);
+  margin-top: clamp(25px,3.5rem,50px);
+  margin-bottom: clamp(75px,8vw,125px);
+  max-width: 25rem;
+}
+.description-about{
+  color:rgb(147, 154, 154);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  margin: clamp(25px,3.5vw,50px);
+  margin-left: clamp(30px,3.7vw,80px);
   max-width: 25rem;
 }
 .nav2{
@@ -157,6 +169,16 @@ a {
   margin-right: clamp(2rem, 6vw, 6rem);
 }
 .port{
+  margin: 0 0 1.25rem;
+  margin-left: 2rem;
+  color: var(--accent);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+.port2{
   margin: 0 0 1.25rem;
   margin-left: 2rem;
   color: var(--accent);
@@ -187,7 +209,17 @@ a {
 .section-one{
   display: grid;
   min-height: 100vh;
-  margin-left: 2rem;
+  margin-left: clamp(1rem,2.3vh, 2rem);
+  margin-right: clamp(1rem, 2.3vh, 2rem);
+  padding-top: clamp(8rem, 15vh, 11rem);
+}
+.section-two{
+  display: grid;
+  align-content: start;
+  min-height: 100vh;
+  margin-left: clamp(1rem,2.3vh, 2rem);
+  margin-right: clamp(1rem, 2.3vh, 2rem);
+  margin-top: clamp(4rem,5vh,7rem);
   padding-top: clamp(8rem, 15vh, 11rem);
 }
   .grey-title{
@@ -206,6 +238,7 @@ a {
 }
 .grey-title2{
     margin: 0;
+    margin-left: 1rem;
     font-size: clamp(3rem, 8vw, 10rem);
     font-family: "Arimo", sans-serif;
     color:rgb(147, 154, 154);
@@ -214,8 +247,24 @@ a {
   .white-title2{
     font-size: clamp(3rem, 8vw, 10rem);
     margin: 0;
+    margin-left: 1rem;
     font-family: "Arimo", sans-serif;
     color: white;
+    line-height: 0.9;
+}
+.grey-title3{
+    margin: 0;
+    font-size: clamp(1rem, 4.5vw, 7rem);
+    font-family: "Arimo", sans-serif;
+    color:rgb(147, 154, 154);
+    line-height: 0.9;
+}
+.grey-title4{
+    margin: 0;
+    margin-left: clamp(2rem,3vw,5rem);
+    font-size: clamp(4rem, 8vw, 9rem);
+    font-family: "Arimo", sans-serif;
+    color:rgb(147, 154, 154);
     line-height: 0.9;
 }
   .blue-title{
@@ -269,3 +318,89 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 4px;
   }
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 3.5rem;
+  height: 3.5rem;
+
+  color: var(--text);
+  background-color: transparent;
+  border: 1px solid var(--line);
+  text-decoration: none;
+
+  transition:
+    transform 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.contact-button i {
+  font-size: 1.5rem;
+}
+
+.contact-button:hover,
+.contact-button:focus-visible {
+  transform: translateY(-0.35rem);
+  color: var(--accent);
+  border-color: var(--accent);
+  background-color: rgba(93, 225, 242, 0.06);
+
+  box-shadow:
+    0 0.75rem 1.5rem rgba(0, 0, 0, 0.3),
+    0 0 1rem rgba(93, 225, 242, 0.15);
+}
+
+.contact-button:active {
+  transform: translateY(-0.1rem) scale(0.95);
+}
+.retratopessoal {
+  margin-top: clamp(3rem, 4vw, 6rem);
+  margin-bottom: clamp(2rem,4vw,5rem);
+  margin-left: clamp(7rem,12vw,18rem);
+  margin-right: clamp(1rem, 2vw, 3rem);
+}
+.about-img {
+  width: min(40vw, 28rem);
+  height: auto;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+.skills h2 {
+  margin: 0;
+  font:
+    500 1rem "Arimo",
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color:rgb(147, 154, 154);
+}
+.skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+.skills li::before {
+  content: "+";
+  margin-right: 0.5rem;
+  color: var(--accent);
+}
