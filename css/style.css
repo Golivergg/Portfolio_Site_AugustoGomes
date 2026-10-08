@@ -59,6 +59,7 @@ a {
 
 .site-header{
   position: fixed;
+  z-index: 1000;
   background: rgba(9, 11, 12, 0.82);
   backdrop-filter: blur(10px);
   top: 0;

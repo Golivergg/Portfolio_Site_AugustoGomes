@@ -1,1 +1,2 @@
-AAAAAAAAAAAA
+## Site Portfólio
+Esse é o primeiro site que estou desenvolvendo e seu intuito é de ser um site de portfolio. Esse projeto faz parte do currículo do primeiro semestre do curso de Ciência da Computação do Insper.

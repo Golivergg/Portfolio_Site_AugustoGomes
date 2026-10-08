@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleproject.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -23,7 +24,95 @@
 
     </header>
 
-    <h1> TESTE</h1>
+    <main class="projects-page">
+
+  <section class="projects-intro">
+    <p class="projects-label">· Trabalhos selecionados ·</p>
+
+    <h1 class="projects-title">
+      <span>MEUS</span>
+      <span>PROJETOS</span>
+    </h1>
+
+    <p class="projects-description">
+      Uma seleção de projetos acadêmicos e pessoais desenvolvidos
+      durante minha formação em Ciência da Computação.
+    </p>
+  </section>
+
+  <section class="projects-grid" aria-label="Lista de projetos">
+
+    <!-- Projeto principal -->
+    <article class="project-card project-card-featured">
+      <a
+        class="project-link"
+        href="https://github.com/insper-classroom/projeto1_dev_life_augusto.git"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <figure class="project-image">
+          <img
+            src="img/projind.png"
+            alt="Captura de tela do jogo Classic Dungeon Blitz"
+          >
+        </figure>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>01</span>
+            <span>2026</span>
+          </div>
+
+          <h2>Jogo no terminal - Projeto Individual Insper</h2>
+
+          <p class="project-description">
+            Jogo roguelike de terminal desenvolvido em Python como
+            projeto acadêmico do primeiro semestre.
+          </p>
+
+          <p class="project-technologies">
+            Python · Curses · Terminal
+          </p>
+        </div>
+      </a>
+    </article>
+
+    <!-- Espaço para projeto futuro -->
+    <article class="project-card project-coming-soon">
+      <div class="project-content">
+        <div class="project-meta">
+          <span>02</span>
+          <span>Em breve</span>
+        </div>
+
+        <h2>Próximo projeto</h2>
+
+        <p class="project-description">
+          Este espaço receberá um novo estudo de caso.
+        </p>
+      </div>
+    </article>
+
+    <!-- Espaço para projeto futuro -->
+    <article class="project-card project-coming-soon">
+      <div class="project-content">
+        <div class="project-meta">
+          <span>03</span>
+          <span>Em breve</span>
+        </div>
+
+        <h2>Próximo projeto</h2>
+
+        <p class="project-description">
+          Este espaço receberá um novo estudo de caso.
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <div class="section-line"></div>
+</main>
 
 </body>
 </html>
